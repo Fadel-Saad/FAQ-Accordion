@@ -1,0 +1,66 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body  {
+  background-color: rgb(245, 228, 245);
+  background-image: url(./assets/images/background-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100vw  auto;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+main  {
+  width: 40%;
+  height: 70%;
+  position: absolute;
+  top: 30%;
+}
+
+.accordion  {
+  background-color: white;
+  border-radius: 4%;
+  min-width: 70%;
+  
+  text-align: center;
+  padding: 20px;
+}
+
+.question {
+  margin: 30px 30px;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+
+.q-text {
+  display: inline;
+  text-align: left;
+  font-family: Roboto, sans-serif;
+}
+
+.q-text:hover {
+  color: blueviolet;
+  cursor: pointer;
+}
+
+h2  {
+  margin: 20px  20px;
+  text-align: left;
+  font-size: 3rem;
+  font-family: Roboto, sans-serif;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
