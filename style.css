@@ -6,31 +6,39 @@ html {
 }
 
 body  {
-  background-color: rgb(245, 228, 245);
-  background-image: url(./assets/images/background-pattern-desktop.svg);
-  background-repeat: no-repeat;
-  background-size: 100vw  auto;
   height: 100vh;
   margin: 0;
+  background-color: rgb(235, 213, 235);
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
+}
+
+body::before  {
+  content: "";
+  background-image: url(./assets/images/background-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30vh;
+  width: 100%;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 main  {
-  width: 40%;
+  min-width: 40%;
   height: 70%;
-  position: absolute;
-  top: 30%;
 }
 
 .accordion  {
   background-color: white;
   border-radius: 4%;
   min-width: 70%;
-  
   text-align: center;
   padding: 20px;
 }
@@ -59,7 +67,7 @@ h2  {
   font-family: Roboto, sans-serif;
 }
 
-.btn {
+.btn  {
   background-color: transparent;
   border: none;
   cursor: pointer;
