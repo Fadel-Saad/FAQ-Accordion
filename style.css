@@ -31,28 +31,32 @@ body::before  {
 }
 
 main  {
-  min-width: 40%;
+  min-width: 280px;
+  width: 35%;
   height: 70%;
 }
 
 .accordion  {
   background-color: white;
   border-radius: 4%;
-  min-width: 70%;
   text-align: center;
   padding: 20px;
 }
 
 .question {
-  margin: 30px 30px;
+  margin: 20px 20px;
   display: grid;
   grid-template-columns: 4fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 .q-text {
+  max-height: 40px;
   display: inline;
   text-align: left;
   font-family: Roboto, sans-serif;
+  align-content: center;
+  margin: 0 0;
 }
 
 .q-text:hover {
@@ -71,4 +75,24 @@ h2  {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  max-height: 35px;
+}
+
+.answer {
+  grid-column: span 2;
+  text-align: left;
+  width: 90%;
+  font-family: Roboto, sans-serif;
+  margin: 0 0;
+  color: rgb(172, 165, 165);
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 400px) {
+  main  {
+    min-width: 80%;
+  }
 }
